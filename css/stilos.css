@@ -1,3 +1,10 @@
+/* Reset css global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(
     90deg,
@@ -9,8 +16,18 @@ body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
 .menu {
   background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
 }
 
 .menu li {
@@ -22,6 +39,11 @@ body {
   display: flex;
   /* essa propriedade força a ficar no modo coluna*/
   justify-content: space-around;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 a {
@@ -42,4 +64,9 @@ a:hover {
 
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
